@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NuttZu Practice</title>
+</head>
+<body style="background-color: rgb(218, 198, 213);">
+    <!-- navigation bar -->
+    <nav>
+        <div class="nav-logo">
+            <a href="https://nuttzu.github.io/nuttzu-practice/">
+                <img src="https://raw.githubusercontent.com/NuttZu/Public-Picture/main/Picture/NuttZu%20Icon%2C%20Logo/NuttZuPanda.jpg" alt="NuttZu Logo">
+            </a>
+            
+        </div>
+        <div class="nav-menu">
+            <p>Collection of my Front-End practices</p>
+        </div>
+    </nav>
+
+    <!-- content area -->
+    <div class="content-area">
+
+        <!-- content 1 (DBT) -->
+        <div class="content1">
+            <h1>DBT</h1>
+            <p>(Digital Business Technology)</p>
+
+            <img src="./1-DBT/reference.jpg" alt="DBT Reference Image">
+
+            <p style="text-align: center; margin-bottom: 30px">(Reference Image)</p>
+
+            <p>I've this reference from my GF.</p>
+            <p>It's my first time to convert design to webpage.</p>
+            <p>I'm glad it look so good as i expect :D</p>
+
+            <a href="1-DBT/DBT.html" target="_blank">
+                <button>Go to page</button>
+            </a>
+        </div>
+    </div>
+</body>
+</html>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Itim&display=swap');
+
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: "Itim", sans-serif;
+    }
+
+    nav {
+        background-color: rgb(43, 164, 43);
+        height: 4rem;
+        padding: 0 1rem 0 1rem;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & .nav-logo {
+            & img {
+                height: 4rem;
+            }
+        }
+
+        & .nav-menu {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            align-content: center;
+
+            & p {
+                font-weight: bold;
+                color: blanchedalmond;
+            }
+        }
+    }
+
+    .content-area {
+        width: 60%;
+        padding-top: 2rem;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        & .content1 {
+            width: 100%;
+            background-color: rgb(243, 229, 205);
+            padding: 2rem;
+
+            p {font-size: large;}
+
+            & img {
+                display: flex;
+                width: 80%;
+                margin: 20px auto 0 auto;
+            }
+
+            & button {
+                border-radius: 0.8rem;
+                margin-top: 20px;
+                border-style: none;
+                background-color: rgb(17, 58, 139);
+                padding: 5px;
+                color: azure;
+                font-size: 25px;
+            }
+            & button:hover{
+                background-color: rgba(17, 58, 139, 0.772);
+                color: rgb(255, 255, 0);
+                transition: background-color .5s, color .8s;
+            }
+        }
+    }
+</style>
